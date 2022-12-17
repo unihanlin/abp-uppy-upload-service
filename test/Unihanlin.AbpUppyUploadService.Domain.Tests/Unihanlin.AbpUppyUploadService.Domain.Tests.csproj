@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Unihanlin.AbpUppyUploadService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Unihanlin.AbpUppyUploadService.EntityFrameworkCore.Tests\Unihanlin.AbpUppyUploadService.EntityFrameworkCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

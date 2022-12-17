@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+:root .lpx-theme-dark {
+  --lpx-logo: url('/assets/images/logo/logo-light.png');
+  --lpx-logo-icon: url('/assets/images/logo/icon-light.png');
+}
+
+:root .lpx-theme-light {
+  --lpx-logo: url('/assets/images/logo/logo-dark.png');
+  --lpx-logo-icon: url('/assets/images/logo/icon-dark.png');
+}

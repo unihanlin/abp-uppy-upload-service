@@ -1,0 +1,7 @@
+{
+  "culture": "sl",
+  "texts": {
+    "SamplePageMessage": "Vzorčna stran za modul AbpUppyUploadService",
+    "Menu:AbpUppyUploadService": "Ime mojega projekta"
+  }
+}
