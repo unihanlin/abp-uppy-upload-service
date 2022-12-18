@@ -8,3 +8,6 @@
   --lpx-logo: url('/assets/images/logo/logo-dark.png');
   --lpx-logo-icon: url('/assets/images/logo/icon-dark.png');
 }
+
+@import '~@uppy/core/dist/style.css';
+@import '~@uppy/dashboard/dist/style.css';

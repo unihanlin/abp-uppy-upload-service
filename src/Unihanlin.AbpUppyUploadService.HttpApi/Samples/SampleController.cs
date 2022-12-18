@@ -30,4 +30,18 @@ public class SampleController : AbpUppyUploadServiceController, ISampleAppServic
     {
         return await _sampleAppService.GetAsync();
     }
+
+    [HttpPost]
+    [Route("upload")]
+    public Task<bool> UploadAsync(UploadDto input)
+    {
+        return _sampleAppService.UploadAsync(input);
+    }
+
+    [HttpPost]
+    [Route("upload-many")]
+    public Task<bool> UploadManyAsync(UploadManyDto input)
+    {
+        return _sampleAppService.UploadManyAsync(input);
+    }
 }

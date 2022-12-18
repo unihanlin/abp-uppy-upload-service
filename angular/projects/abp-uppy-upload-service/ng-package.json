@@ -3,5 +3,6 @@
   "dest": "../../dist/abp-uppy-upload-service",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["@uppy/core", "@uppy/dashboard", "@uppy/xhr-upload"]
 }
