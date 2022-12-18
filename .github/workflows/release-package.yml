@@ -18,8 +18,6 @@ jobs:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-npmjs:
     needs: build
@@ -32,8 +30,6 @@ jobs:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
       - run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: npm run build
       - name: Publish Package
         working-directory: angular/dist/abp-uppy-upload-service
