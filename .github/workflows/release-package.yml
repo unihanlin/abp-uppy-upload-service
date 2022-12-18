@@ -1,0 +1,42 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+defaults:
+  run:
+    working-directory: angular
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  publish-npmjs:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - run: npm run build
+      - name: Publish Package
+        working-directory: angular/dist/abp-uppy-upload-service
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
