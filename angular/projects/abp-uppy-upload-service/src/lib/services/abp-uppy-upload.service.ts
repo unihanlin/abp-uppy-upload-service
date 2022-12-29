@@ -80,16 +80,16 @@ export class AbpUppyUploadService implements OnDestroy {
           if (this.uppyParent2Children[uppyParentContainerKey].indexOf(uppyContainerKey) === -1)
             this.uppyParent2Children[uppyParentContainerKey].push(uppyContainerKey);
 
-          // Remove plugins of other uppy instances
-          this.uppyParent2Children[uppyParentContainerKey]
-            .filter(k => k !== uppyContainerKey)
-            .forEach(k => {
-              const uppyInstance = this.uppys[k];
+          // Remove plugins of uppy instances
+          this.uppyParent2Children[uppyParentContainerKey].forEach(k => {
+            const uppyInstance = this.uppys[k];
+            if (uppyInstance) {
               let dashboard = uppyInstance.getPlugin('Dashboard');
               if (dashboard) uppyInstance.removePlugin(dashboard);
               let xhrUpload = uppyInstance.getPlugin('XHRUpload');
               if (xhrUpload) uppyInstance.removePlugin(xhrUpload);
-            });
+            }
+          });
 
           if (!this.uppys[uppyContainerKey]) {
             this.uppys[uppyContainerKey] = new Uppy({
@@ -128,6 +128,7 @@ export class AbpUppyUploadService implements OnDestroy {
 
           let defaultFieldName = 'file';
           if (xhr?.bundle ?? false) defaultFieldName += 's';
+
           this.uppys[uppyContainerKey]
             .use(Dashboard, {
               trigger: trigger,

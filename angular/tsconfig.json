@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.prod.json",
   "compilerOptions": {
+    "sourceMap": true,
     "paths": {
       "@unihanlin/abp-uppy-upload-service": ["projects/abp-uppy-upload-service/src/public-api.ts"],
       "@proxy": ["projects/abp-uppy-upload-service/src/lib/proxy/index.ts"],

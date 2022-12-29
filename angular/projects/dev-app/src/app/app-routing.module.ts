@@ -28,7 +28,9 @@ const routes: Routes = [
   {
     path: 'abp-uppy-upload-service',
     loadChildren: () =>
-      import('@unihanlin/abp-uppy-upload-service').then(m => m.AbpUppyUploadServiceModule.forLazy()),
+      import('@unihanlin/abp-uppy-upload-service').then(m =>
+        m.AbpUppyUploadServiceModule.forLazy()
+      ),
   },
 ];
 
