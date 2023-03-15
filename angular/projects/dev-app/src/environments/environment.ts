@@ -8,7 +8,7 @@ const oAuthConfig = {
   clientId: 'AbpUppyUploadService_App',
   responseType: 'code',
   scope: 'offline_access AbpUppyUploadService',
-  requireHttps: true
+  requireHttps: true,
 };
 
 export const environment = {
