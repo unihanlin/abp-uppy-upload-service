@@ -111,7 +111,8 @@ export class AbpUppyUploadService implements OnDestroy {
                 }
               })
               .on('upload-error', (file: UppyFile<{}, {}>, error, response) => {
-                if (!response.body) return;
+                console.error('upload-error', error);
+                if (!response || !response.body) return;
                 const coreError = response.body.error;
                 this.confirmation
                   .error(
@@ -153,7 +154,7 @@ export class AbpUppyUploadService implements OnDestroy {
               formData: xhr?.formData ?? true,
               bundle: xhr?.bundle ?? false,
               fieldName: xhr?.fieldName || defaultFieldName,
-              headers,
+              headers: { ...headers },
               timeout: xhr?.timeout ?? 30 * 1000,
             });
         })

@@ -1,6 +1,6 @@
 {
   "name": "@unihanlin/abp-uppy-upload-service",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "homepage": "https://www.unihanlin.com",
   "repository": {
     "type": "git",
@@ -21,10 +21,10 @@
     "ng"
   ],
   "peerDependencies": {
-    "@angular/common": ">=9",
-    "@angular/core": ">=9",
-    "@abp/ng.core": ">=6.0.2",
-    "@abp/ng.theme.shared": ">=6.0.2"
+    "@angular/common": ">=15",
+    "@angular/core": ">=15",
+    "@abp/ng.core": ">=7.0.3",
+    "@abp/ng.theme.shared": ">=7.0.3"
   },
   "dependencies": {
     "tslib": "^2.1.0",

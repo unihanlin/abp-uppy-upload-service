@@ -1,5 +1,6 @@
 import { CoreModule } from '@abp/ng.core';
 import { registerLocale } from '@abp/ng.core/locale';
+import { AbpOAuthModule } from '@abp/ng.oauth';
 import { SettingManagementConfigModule } from '@abp/ng.setting-management/config';
 import { ThemeSharedModule } from '@abp/ng.theme.shared';
 import { NgModule } from '@angular/core';
@@ -27,6 +28,7 @@ import { APP_ROUTE_PROVIDER } from './route.provider';
       sendNullsAsQueryParam: false,
       skipGetAppConfiguration: false,
     }),
+    AbpOAuthModule.forRoot(),
     ThemeSharedModule.forRoot(),
     AccountAdminConfigModule.forRoot(),
     AccountPublicConfigModule.forRoot(),
