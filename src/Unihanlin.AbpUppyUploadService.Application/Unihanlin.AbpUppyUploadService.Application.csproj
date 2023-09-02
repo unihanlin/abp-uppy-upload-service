@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.0.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.2.1" />
     <ProjectReference Include="..\Unihanlin.AbpUppyUploadService.Application.Contracts\Unihanlin.AbpUppyUploadService.Application.Contracts.csproj" />
     <ProjectReference Include="..\Unihanlin.AbpUppyUploadService.Domain\Unihanlin.AbpUppyUploadService.Domain.csproj" />
   </ItemGroup>

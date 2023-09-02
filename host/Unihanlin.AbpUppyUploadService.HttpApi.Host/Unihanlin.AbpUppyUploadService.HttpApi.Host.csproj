@@ -19,19 +19,19 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Volo.Abp.Autofac" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.Swashbuckle" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Volo.Saas.EntityFrameworkCore" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Lepton" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.LeptonTheme.Management.Application" Version="7.0.3" />
-    <PackageReference Include="Volo.Abp.LeptonTheme.Management.Domain" Version="7.0.3" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="7.2.1" />
+    <PackageReference Include="Volo.Saas.EntityFrameworkCore" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Lepton" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.LeptonTheme.Management.Application" Version="7.2.1" />
+    <PackageReference Include="Volo.Abp.LeptonTheme.Management.Domain" Version="7.2.1" />
   </ItemGroup>
 
   <ItemGroup>
