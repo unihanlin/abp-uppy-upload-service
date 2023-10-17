@@ -1,6 +1,6 @@
 {
   "name": "@unihanlin/abp-uppy-upload-service",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "homepage": "https://www.unihanlin.com",
   "repository": {
     "type": "git",
@@ -21,16 +21,16 @@
     "ng"
   ],
   "peerDependencies": {
-    "@angular/common": ">=15",
-    "@angular/core": ">=15",
-    "@abp/ng.core": ">=7.2.1",
-    "@abp/ng.theme.shared": ">=7.2.1"
+    "@angular/common": ">=16",
+    "@angular/core": ">=16",
+    "@abp/ng.core": ">=7.4.0",
+    "@abp/ng.theme.shared": ">=7.4.0"
   },
   "dependencies": {
     "tslib": "^2.1.0",
-    "@uppy/core": "^3.0.4",
-    "@uppy/dashboard": "^3.2.0",
-    "@uppy/xhr-upload": "^3.0.4"
+    "@uppy/core": "^3.5.1",
+    "@uppy/dashboard": "^3.5.4",
+    "@uppy/xhr-upload": "^3.4.1"
   },
   "publishConfig": {
     "access": "public"
